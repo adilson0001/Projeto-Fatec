@@ -1,0 +1,69 @@
+
+
+
+/* configuração geral */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --vermelho: #cb2027;
+    --branco: white;
+    --preto: black;
+    --azul: blue;
+    --fundo:#f4f7f6;
+    --fonte-padrão:arial,verdana,helvetica;
+}
+
+
+body{
+    background-color:var(--fundo) ;
+    font-family:var(--fonte-padrão);
+
+}
+
+/* barra de navegação */
+header{
+  background-color: var(--vermelho);
+
+  
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 35px; 
+}
+
+span>p{
+    display: inline;
+}
+.nav_direita{
+   justify-content: left;
+}
+
+.nav_esquerda{
+    justify-content: right;
+}
+
+/* conteudo do site */
+div>h1{
+    background-color: var(--vermelho);
+    border-radius: 5px 5px 0px 0px;
+    padding: 20px;
+}
+.adicionar_aluno{
+    background-color: var(--branco);
+    margin: 10px;
+    border-radius: 5px;
+    display: block;
+    margin-top: 10px;
+    box-shadow: 10px 5px 20px 3px;
+}
+
+.texto{
+    padding: 30px;
+}
+
+

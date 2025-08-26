@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Alunos</title>
+    <link rel="stylesheet" href="style.css">
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    
+    <header class="navbar">
+        <div class="navbar-left">
+            <a href="index.html"><i class="fas fa-signal icon"></i></a>
+            <a href=""><i class="fas fa-chart-bar icon"></i></a>
+            <a href=""><i class="fas fa-edit icon"></i></a>
+            <a href=""><i class="fas fa-envelope icon"></i></a>
+        </div>
+        <div class="navbar-right">
+            <span class="professor-name">Professor I</span>
+            <span class="professor-email">professor@email.com</span>
+            <img src="https://via.placeholder.com/30" alt="User Avatar" class="user-avatar">
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="card add-students-card">
+            <div class="card-header">
+                <i class="fas fa-user-plus icon"></i>
+                <h2>Adicionar alunos</h2>
+            </div>
+            <div class="card-content">
+                <p>Suba uma tabela com os dados dos alunos para criar os contas automaticamente. Um e-mail será enviado a cada aluno para que ele possa ativar a conta e começar a usar a plataforma.</p>
+                <p><strong>Dados obrigatórios do Aluno</strong></p>
+                <ul>
+                    <li>- Nome</li>
+                    <li>- R.A.</li>
+                    <li>- Email</li>
+                    <li>- Semestre</li>
+                </ul>
+                <button class="btn btn-primary">Subir Planilha</button>
+            </div>
+        </div>
+
+        <div class="card filter-students-card">
+            <div class="card-header">
+                <h2>Filtro de Alunos</h2>
+            </div>
+            <div class="card-content">
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="semester">Semestre</label>
+                    <select id="semester">
+                        <option value="">Selecione</option>
+                        <option value="1">1º Semestre</option>
+                        <option value="2">2º Semestre</option>
+                        <option value="3">3º Semestre</option>
+                    </select>
+                </div>
+                <button class="btn btn-secondary">Aplicar Filtros</button>
+            </div>
+        </div>
+
+        <div class="card student-table-card">
+            <div class="card-header">
+                <div class="table-header-cell">Nome</div>
+                <div class="table-header-cell">RA do Aluno</div>
+                <div class="table-header-cell">A</div>
+                <div class="table-header-cell">B</div>
+                <div class="table-header-cell">C</div>
+            </div>
+            <div class="card-content table-body">
+                <div class="table-row">
+                    <div class="table-cell">Aluno 1</div>
+                    <div class="table-cell">12/12/2021</div>
+                    <div class="table-cell status-icon check"><i class="fas fa-check-circle"></i></div>
+                    <div class="table-cell status-icon check"><i class="fas fa-check-circle"></i></div>
+                    <div class="table-cell status-icon"><i class="far fa-square"></i></div>
+                    <div class="table-cell action-icons">
+                        <i class="fas fa-external-link-alt"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">Aluno 2</div>
+                    <div class="table-cell">232323323232</div>
+                    <div class="table-cell status-icon check"><i class="fas fa-check-circle"></i></div>
+                    <div class="table-cell status-icon info"><i class="fas fa-info-circle"></i></div>
+                    <div class="table-cell status-icon"><i class="far fa-square"></i></div>
+                    <div class="table-cell action-icons">
+                        <i class="fas fa-external-link-alt"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">Aluno 3</div>
+                    <div class="table-cell">3434343434343</div>
+                    <div class="table-cell status-icon check"><i class="fas fa-check-circle"></i></div>
+                    <div class="table-cell status-icon eye"><i class="fas fa-eye"></i></div>
+                    <div class="table-cell status-icon warning"><i class="fas fa-exclamation-triangle"></i></div>
+                    <div class="table-cell action-icons">
+                        <i class="fas fa-external-link-alt"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">Aluno 4</div>
+                    <div class="table-cell">4545454545454</div>
+                    <div class="table-cell status-icon check"><i class="fas fa-check-circle"></i></div>
+                    <div class="table-cell status-icon error"><i class="fas fa-times-circle"></i></div>
+                    <div class="table-cell status-icon"><i class="far fa-square"></i></div>
+                    <div class="table-cell action-icons">
+                        <i class="fas fa-external-link-alt"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

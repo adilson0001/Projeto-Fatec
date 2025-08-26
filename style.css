@@ -1,0 +1,259 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f7f6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #cb2027;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-left {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-left .icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.professor-name {
+    font-weight: bold;
+}
+
+.professor-email {
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+.user-avatar {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border: 1px solid white;
+}
+
+/* Main Container Styles */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* Card Styles */
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card-header {
+    background-color: #444;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.add-students-card .card-header {
+    background-color: #cb2027; /* Red color for "Adicionar alunos" header */
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.card-content ul li {
+    margin-bottom: 5px;
+}
+
+/* Button Styles */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #cb2027;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #a3191f;
+}
+
+.btn-secondary {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #0056b3;
+}
+
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+/* Student Table Card Styles */
+.student-table-card {
+    grid-column: span 2; /* Spans across both columns */
+}
+
+.student-table-card .card-header {
+    background-color: #333; /* Darker header for the table */
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 0.5fr 0.5fr 0.5fr 0.5fr; /* Adjust column widths */
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.table-header-cell {
+    font-weight: bold;
+    color: white;
+}
+
+.table-body {
+    padding: 0;
+}
+
+.table-row {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 0.5fr 0.5fr 0.5fr 0.5fr; /* Match header columns */
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+    align-items: center;
+}
+
+.table-row:last-child {
+    border-bottom: none;
+}
+
+.table-cell {
+    color: #333;
+}
+
+.status-icon {
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.status-icon.check i {
+    color: #28a745; /* Green for checkmark */
+}
+
+.status-icon.info i {
+    color: #ffc107; /* Orange for info circle */
+}
+
+.status-icon.eye i {
+    color: #007bff; /* Blue for eye icon */
+}
+
+.status-icon.warning i {
+    color: #ffc107; /* Orange for warning triangle */
+}
+
+.status-icon.error i {
+    color: #dc3545; /* Red for error X icon */
+}
+
+
+.action-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end; /* Align to the right */
+}
+
+.action-icons i {
+    font-size: 1.1em;
+    color: #6c757d;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.action-icons i:hover {
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr; /* Stack cards vertically on smaller screens */
+    }
+
+    .student-table-card {
+        grid-column: span 1; /* Reset span for smaller screens */
+    }
+
+    .navbar-left {
+        gap: 10px;
+    }
+
+    .navbar-right {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 5px;
+    }
+
+    .student-table-card .card-header,
+    .table-row {
+        grid-template-columns: 1.5fr 1fr 0.5fr 0.5fr 0.5fr 0.5fr; /* Adjust table columns */
+        font-size: 0.9em;
+    }
+}

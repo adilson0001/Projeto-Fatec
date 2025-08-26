@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão de Documento</title>
+    <link rel="stylesheet" href="style3.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar-left">
+           <img src="Copy of Grupo Estagio telas.png" alt="logo proximo estagio">
+            <a href="index.html"><i class="fas fa-chart-bar icon"></i></a>
+            <a href="documentos.html"><i class="fas fa-edit icon"></i></a>
+            <i class="fas fa-envelope icon"></i>
+        </div>
+        <div class="navbar-right">
+            <span class="professor-name">Professor I</span>
+            <span class="professor-email">professor@email.com</span>
+            <img src="https://via.placeholder.com/30" alt="User Avatar" class="user-avatar">
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="modal-overlay">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title-left">
+                        <span>Documento B</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </div>
+                    <div class="modal-title-right">
+                        <span>Tipo do Documento: B</span>
+                        <i class="fas fa-times close-icon"></i>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="student-info">
+                        <p><span class="label">Aluno:</span> <span class="value">Nome: Aluno 3</span> <span class="label">R.A:</span> <span class="value">34343434343</span></p>
+                    </div>
+                    <div class="document-receipt">
+                        <p>Recebido do Aluno para esse documento:</p>
+                        <div class="document-content-placeholder"></div>
+                    </div>
+                    <div class="response-section">
+                        <p>Adicione uma resposta para o Aluno</p>
+                        <div class="text-editor-toolbar">
+                            <button><i class="fas fa-bold"></i></button>
+                            <button><i class="fas fa-italic"></i></button>
+                            <button><i class="fas fa-underline"></i></button>
+                            <button><i class="fas fa-list-ul"></i></button>
+                            <button><i class="fas fa-list-ol"></i></button>
+                        </div>
+                        <textarea class="response-textarea" rows="8" placeholder="Escreva sua resposta aqui..."></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-red">Invalidar Documento</button>
+                    <button class="btn btn-green">Validar Documento</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card document-table-card">
+            <div class="card-header">
+                <div class="table-header-cell">Nome do Documento</div>
+                <div class="table-header-cell">Tipo</div>
+                <div class="table-header-cell">Nome do Aluno</div>
+                <div class="table-header-cell">RA do Aluno</div>
+                <div class="table-header-cell">Status</div>
+            </div>
+            <div class="card-content table-body">
+                <div class="table-row">
+                    <div class="table-cell">documento do tipo C</div>
+                    <div class="table-cell">C</div>
+                    <div class="table-cell">Aluno 1</div>
+                    <div class="table-cell">12121212121</div>
+                    <div class="table-cell status-icon"><i class="fas fa-exclamation-triangle orange"></i></div>
+                    <div class="table-cell action-icons">
+                        <i class="fas fa-external-link-alt"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">doc B</div>
+                    <div class="table-cell">B</div>
+                    <div class="table-cell">Aluno 2</div>
+                    <div class="table-cell">232323323232</div>
+                    <div class="table-cell status-icon"><i class="fas fa-exclamation-triangle orange"></i></div>
+                    <div class="table-cell action-icons">
+                        <i class="fas fa-external-link-alt"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">doc C</div>
+                    <div class="table-cell">A</div>
+                    <div class="table-cell">Aluno 2</div>
+                    <div class="table-cell">232323323232</div>
+                    <div class="table-cell status-icon"><i class="fas fa-check-circle green"></i></div>
+                    <div class="table-cell action-icons">
+                        <i class="fas fa-external-link-alt"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">Documento B</div>
+                    <div class="table-cell">B</div>
+                    <div class="table-cell">Aluno 1</div>
+                    <div class="table-cell">34343434343</div>
+                    <div class="table-cell status-icon"><i class="fas fa-exclamation-triangle orange"></i></div>
+                    <div class="table-cell action-icons">
+                        <i class="fas fa-external-link-alt"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

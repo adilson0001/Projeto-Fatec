@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Documentos</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar-left">
+            <i class="fas fa-signal icon"></i>
+            <i class="fas fa-chart-bar icon"></i>
+            <i class="fas fa-edit icon"></i>
+            <i class="fas fa-envelope icon"></i>
+        </div>
+        <div class="navbar-right">
+            <span class="professor-name">Professor I</span>
+            <span class="professor-email">professor@email.com</span>
+            <img src="https://via.placeholder.com/30" alt="User Avatar" class="user-avatar">
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="card document-filter-card">
+            <div class="card-content-grid">
+                <div class="filter-section">
+                    <p class="filter-title">Filtro de documentos</p>
+                    <div class="form-group">
+                        <label>Status:</label>
+                        <div class="radio-group">
+                            <input type="radio" id="not-evaluated" name="status" value="not-evaluated">
+                            <label for="not-evaluated">Não Avaliado</label><br>
+                            <input type="radio" id="valid" name="status" value="valid">
+                            <label for="valid">Validado</label><br>
+                            <input type="radio" id="invalid" name="status" value="invalid">
+                            <label for="invalid">Invalidado</label><br>
+                            <input type="radio" id="visualized" name="status" value="visualized">
+                            <label for="visualized">Visualizado</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter-section">
+                    <p class="filter-title">Documentos encontrados: 10</p>
+                    <div class="form-group">
+                        <label>Tipo:</label>
+                        <div class="radio-group">
+                            <input type="radio" id="type-a" name="type" value="A">
+                            <label for="type-a">A</label><br>
+                            <input type="radio" id="type-b" name="type" value="B">
+                            <label for="type-b">B</label><br>
+                            <input type="radio" id="type-c" name="type" value="C">
+                            <label for="type-c">C</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="status-summary">
+                    <div class="status-item">
+                        <i class="fas fa-check-square status-icon-large green"></i>
+                        <span>Validado</span>
+                        <span class="count">5</span>
+                    </div>
+                    <div class="status-item">
+                        <i class="fas fa-times-circle status-icon-large red"></i>
+                        <span>Invalidado</span>
+                        <span class="count">1</span>
+                    </div>
+                    <div class="status-item">
+                        <i class="fas fa-minus-circle status-icon-large orange"></i>
+                        <span>Não Avaliado</span>
+                        <span class="count">2</span>
+                    </div>
+                    <div class="status-item">
+                        <i class="fas fa-eye status-icon-large blue"></i>
+                        <span>Visualizado</span>
+                        <span class="count">1</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card document-table-card">
+            <div class="card-header">
+                <div class="table-header-cell">Nome do Documento</div>
+                <div class="table-header-cell">Tipo</div>
+                <div class="table-header-cell">Nome do Aluno</div>
+                <div class="table-header-cell">RA do Aluno</div>
+                <div class="table-header-cell">Status</div>
+            </div>
+            <div class="card-content table-body">
+                <div class="table-row">
+                    <div class="table-cell">Documento C</div>
+                    <div class="table-cell">C</div>
+                    <div class="table-cell">Aluno 1</div>
+                    <div class="table-cell">34243434343</div>
+                    <div class="table-cell status-icon"><i class="fas fa-exclamation-triangle orange"></i></div>
+                    <div class="table-cell action-icons">
+                        <i class="fas fa-external-link-alt"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">Doc A</div>
+                    <div class="table-cell">B</div>
+                    <div class="table-cell">Aluno 4</div>
+                    <div class="table-cell">45454545454</div>
+                    <div class="table-cell status-icon"><i class="fas fa-times-circle red"></i></div>
+                    <div class="table-cell action-icons">
+                        <i class="fas fa-external-link-alt"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">Documento B</div>
+                    <div class="table-cell">B</div>
+                    <div class="table-cell">Aluno 3</div>
+                    <div class="table-cell">34343434343</div>
+                    <div class="table-cell status-icon"><i class="fas fa-eye blue"></i></div>
+                    <div class="table-cell action-icons">
+                        <i class="fas fa-external-link-alt"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">Documento de iniciação</div>
+                    <div class="table-cell">A</div>
+                    <div class="table-cell">Aluno 4</div>
+                    <div class="table-cell">45454545454</div>
+                    <div class="table-cell status-icon"><i class="fas fa-check-circle green"></i></div>
+                    <div class="table-cell action-icons">
+                        <i class="fas fa-external-link-alt"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">primeiro documento</div>
+                    <div class="table-cell">A</div>
+                    <div class="table-cell">Aluno 3</div>
+                    <div class="table-cell">34343434343</div>
+                    <div class="table-cell status-icon"><i class="fas fa-check-circle green"></i></div>
+                    <div class="table-cell action-icons">
+                        <i class="fas fa-external-link-alt"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">documento do tipo C</div>
+                    <div class="table-cell">C</div>
+                    <div class="table-cell">Aluno 1</div>
+                    <div class="table-cell">12121212121</div>
+                    <div class="table-cell status-icon"><i class="fas fa-exclamation-triangle orange"></i></div>
+                    <div class="table-cell action-icons">
+                        <i class="fas fa-external-link-alt"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">doc B</div>
+                    <div class="table-cell">B</div>
+                    <div class="table-cell">Aluno 2</div>
+                    <div class="table-cell">232323323232</div>
+                    <div class="table-cell status-icon"><i class="fas fa-exclamation-triangle orange"></i></div>
+                    <div class="table-cell action-icons">
+                        <i class="fas fa-external-link-alt"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">doc C</div>
+                    <div class="table-cell">A</div>
+                    <div class="table-cell">Aluno 2</div>
+                    <div class="table-cell">232323323232</div>
+                    <div class="table-cell status-icon"><i class="fas fa-check-circle green"></i></div>
+                    <div class="table-cell action-icons">
+                        <i class="fas fa-external-link-alt"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
