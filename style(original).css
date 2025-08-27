@@ -8,11 +8,13 @@
 }
 
 :root{
-    --vermelho: #cb2027;
+    --vermelho: #cb2026e8;
+    --vermelho_escuro:#a3191f;
     --branco: white;
     --preto: black;
     --azul: blue;
-    --fundo:#f4f7f6;
+    --cinza: #444;
+    --fundo: #f4f7f6;
     --fonte-padrão:arial,verdana,helvetica;
 }
 
@@ -26,8 +28,11 @@ body{
 /* barra de navegação */
 header{
   background-color: var(--vermelho);
+ 
+}
 
-  
+header img{
+    width: 100px;
 }
 
 nav{
@@ -36,8 +41,15 @@ nav{
     padding: 35px; 
 }
 
+nav a{
+    text-decoration: none;
+    color: var(--branco) ;
+}
+
 span>p{
     display: inline;
+    color: var(--branco);
+    font-size: 20px;
 }
 .nav_direita{
    justify-content: left;
@@ -48,22 +60,81 @@ span>p{
 }
 
 /* conteudo do site */
+
+
+/*  adicionar alunos */
+
 div>h1{
     background-color: var(--vermelho);
     border-radius: 5px 5px 0px 0px;
     padding: 20px;
+    color: var(--branco);
+   
+    
 }
-.adicionar_aluno{
+h1>span{
+    font-size:25px;
+}
+.container{
     background-color: var(--branco);
     margin: 10px;
     border-radius: 5px;
     display: block;
     margin-top: 10px;
-    box-shadow: 10px 5px 20px 3px;
+  
+    
 }
 
-.texto{
+.texto {
     padding: 30px;
 }
+.texto p{
+    margin-top: 10px;
+}
+.texto ul{
+   list-style: none;
+    margin-top: 10px;
+}
+.botao{
+     padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: var(--vermelho);
+    color: var(--branco);
+}
+.botao:hover{    
+    background-color: var(--vermelho_escuro);
+}
+
+
+
+/* filtrar alunos */
+
+.campos{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.preencher input{
+    padding: 30px;   
+    margin-bottom: 20px;
+    width: calc(100% - 40px);
+    padding: 10px;
+}
+
+select{
+    width: calc(100% - 15px);
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
 
 

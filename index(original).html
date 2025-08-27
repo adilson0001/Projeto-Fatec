@@ -5,46 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proximo Estágio</title>
     <link rel="stylesheet" href="style(original).css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     
     <header>
         <nav >
            <span class="nav_direita">
-               <p>[logo]</p>
+              <p>[LOGO]</p>
                 <a href="#">pagina1</a>
                 <a href="#">pagina2</a>
                 <a href="#">pagina3</a>
            </span>   
            <span class="nav_esquerda">
                
-                <a href="#">pagina1</a>
-                <a href="#">pagina2</a>
-                <a href="#">pagina3</a>
+                <a href="#">Coordenador</a>
+                
+                <a href="#">[FOTO]</a>
            </span> 
         </nav>
     </header>
 
     <main>
-        <div class="adicionar_aluno">
+        <div class="container">
         
-            <h1>Adicionar Alunos</h1>
+            <h1><span><i class="fas fa-user-plus icon" ></span></i> Adicionar Alunos</h1>
             <div class="texto">
-            <p>Suba uma tabela com os dados dos alunos para criar os contas automaticamente. Um e-mail será enviado a cada aluno para que ele possa ativar a conta e começar a usar a plataforma. <br>
-            <strong>Dados obrigatórios do Aluno</strong></p>
-            <ul>
-                <li>-banana</li>
-                <li>-dd</li>
-            </ul>
+               <p>Suba uma tabela com os dados dos alunos para criar os contas automaticamente. Um e-mail será enviado a cada aluno para que ele possa ativar a conta e começar a usar a plataforma.</p>
+                <p><strong>Dados obrigatórios do Aluno</strong></p>
+                <ul>
+                    <li>- Nome</li>
+                    <li>- R.A.</li>
+                    <li>- Email</li>
+                    <li>- Semestre</li>
+                </ul>
+                <br>
+                <input type="button" value="Subir Planilha" class="botao">
         </div>
         </div>
 
-        <div class="filtrar_aluno">
+        <div class="container">
             <h1>Filtrar Alunos</h1>
-            <input type="button" value="aperta">
-        </div>
-    </main>
 
+         
+                <div class="campos">
+
+                    
+                        <div class="preencher">
+                            <label for="Nome">Nome</label><br>
+                            <input type="text" id="nome">
+                            <br>
+                            <label for="Email">Email</label><br>
+                            <input type="email" id="email">
+                        </div>
+           
+
+                  
+
+                    <label for="Semestre">Semestre</label><br>
+                            <select id="semestre">
+                                <option value="">Selecione</option>
+                                <option value="1">1º Semestre</option>
+                                <option value="2">2º Semestre</option>
+                                <option value="3">3º Semestre</option>
+                            </select>
+                            <div>
+                                <input type="button" value="Aplicar Filtros" class="botao"></div>
+                </div>   
+
+                    
+                
+        </div>
+
+        
+
+    </main>
 
 </body>
 </html>
