@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+body{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 50%;
+    
+}
+
+.X p{
+    text-align: end;
+}
+.X:hover{
+    background-color: rgb(241, 241, 241);
+    
+}
+
+.itens{
+    text-align: justify;
+    margin-left:20px;
+}
+.itens h2{
+    color: red;
+    margin-bottom:10px ;   
+
+}
+
+.itens p{
+    color: rgb(63, 61, 61);
+    margin-bottom: 40px;
+}
+
+/* documentos estagio */
+
+.p_baixo{
+    margin-left:20px;
+    background-color: rgb(34, 32, 32);
+}
+
+.cab_cont{
+    background-color: red;
+    border-radius: 10px 10px 0px 0px;
+}
