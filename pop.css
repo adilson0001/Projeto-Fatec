@@ -13,24 +13,28 @@ body{
 }
 .container{
     background-color: white;
-    padding: 10px;
-    border-radius: 10px;
+    padding: 0px;
+    border-radius: 3px;
     border: none;
-    width: 50%;
+    width: 80%;
     
 }
 
 .X p{
     text-align: end;
+    margin-right: 5px;
+    margin-top: 3px;
 }
 .X:hover{
-    background-color: rgb(241, 241, 241);
+    background-color:#f3f4f6;
     
 }
 
 .itens{
     text-align: justify;
     margin-left:20px;
+    margin-right: 20px;
+  
 }
 .itens h2{
     color: red;
@@ -41,16 +45,30 @@ body{
 .itens p{
     color: rgb(63, 61, 61);
     margin-bottom: 40px;
+    
 }
 
 /* documentos estagio */
 
 .p_baixo{
-    margin-left:20px;
-    background-color: rgb(34, 32, 32);
+    margin:0px;
+    padding: 10px;
+    background-color: #4b5563;
+    
+
 }
 
 .cab_cont{
     background-color: red;
     border-radius: 10px 10px 0px 0px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.itens_cont{
+    background-color: white;
+    padding: 10px;
+    text-align: justify;
+    border-radius: 0px 0px 10px 10px;
 }
